@@ -1,0 +1,13 @@
+version: '3.5'
+services:
+    centos:
+        hostname: centos
+        image: centos
+        privileged: true
+        ports:
+          - "8080:80"
+        build:
+          context: .
+          dockerfile: Dockerfile
+        volumes:
+          - /Users/apugachev/Work/Repos:/mnt/d
