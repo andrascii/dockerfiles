@@ -1,0 +1,13 @@
+version: '3.5'
+services:
+    centos:
+        hostname: centos
+        image: centos
+        privileged: true
+        ports:
+          - "80:80"
+        build:
+          context: .
+          dockerfile: Dockerfile
+        volumes:
+          - D:/:/mnt/d
