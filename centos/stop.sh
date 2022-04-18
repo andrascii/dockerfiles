@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker-compose --project-directory . -f docker-compose-macos.yml down
+docker-compose --project-directory . -f docker-compose-unix.yml down

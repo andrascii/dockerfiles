@@ -1,2 +1,2 @@
-docker-compose --project-directory . -f docker-compose.yml up -d
+docker-compose --project-directory . -f docker-compose-win.yml up -d
 pause
