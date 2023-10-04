@@ -6,8 +6,10 @@ services:
         privileged: true
         ports:
           - "8080:80"
+          - "13337:13337"
+          - "8022:22"
         build:
           context: .
           dockerfile: Dockerfile
         volumes:
-          - /Users/apugachev/Work/Repos:/mnt/d
+          - /Users/apugachev/work/repos:/mnt/d
