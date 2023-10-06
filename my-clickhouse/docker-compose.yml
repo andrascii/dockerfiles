@@ -1,8 +1,7 @@
 version: '3.5'
 services:
-    centos:
-        hostname: clickhouse
-        privileged: true
+    clickhouse:
+        image: clickhouse/clickhouse-server:latest
         ports:
           - "8123:8123"
           - "9000:9000"
@@ -13,9 +12,6 @@ services:
           nofile:
             soft: 262144
             hard: 262144
-        build:
-          context: .
-          dockerfile: Dockerfile
 
 networks:
   default:
